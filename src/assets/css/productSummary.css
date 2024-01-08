@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.productSummaryWrapper {
+    margin-bottom: 10px;
+    padding: 0 20px;
+    color: black;
+    width: 800px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #216569;
+    border-radius: 4px;
+    box-shadow: -1px -2px 5px #F0FFFF, 1px 2px 5px #a1dadd;
+}
+
+.productSummaryWrapper .productDetails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+}
+
+.productSummaryWrapper .productDetails .logo {
+    width: 50px;
+    height: 50px;
+    background: #216569;
+    color: #F0FFFF;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #216569;
+    border-radius: 50px;
+}
+
+.productSummaryWrapper .productDetails .logo > p {
+    font-family: 'Rubik';
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.productSummaryWrapper .productDetails .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.productSummaryWrapper .name > p {
+    font-family: 'Rubik';
+    font-size: 18px;
+}
+
+.productSummaryWrapper .productOptions {
+    padding: 0 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.productOptions .priceWithDeleteBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.productOptions .priceWithDeleteBtn .removeBtn {
+
+}
+
+.productOptions .priceWithDeleteBtn .removeBtn {
+    padding: 8px 25px;
+    background-color: #216569;
+    outline: none;
+    border: 1px solid #216569;
+    color: #F0FFFF;
+    font-family: 'Rubik';
+    letter-spacing: .9px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.productOptions .priceWithDeleteBtn .removeBtn:hover {
+    background-color: #2b8186;
+    transform: scale(.98);
+}
+
+.productOptions .priceWithDeleteBtn .removeBtn:active {
+    transform: scale(1.05);
+}

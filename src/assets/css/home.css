@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.homeWrapper {
+    z-index: -100;
+    position: absolute;
+    top: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* height: fit-content; */
+    background: #f1f1f1;
+    padding-bottom: 80px;
+    border: 1px solid black;
+}
+
+.homeWrapper .homeHeader {
+    position: relative;
+    top: 30px;
+    width: 85%;
+    padding: 5px 40px 13px 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #161717;
+}
+
+.homeHeader .homeHeadText {
+    height: 35px;
+    color: #161717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headRightContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeHeader .searchBar {
+    margin-top: 2px;
+    padding: 3px 15px ;
+    color: #0e484b;
+    font-size: 15px;
+    font-family: 'Rubik', Sans-serif;
+    background-color: #f6f6f6;
+    width: 230px;
+    height: 35px;
+    letter-spacing: .6px;
+    outline: none;
+    border: 2px solid #79c3c7;
+    border-radius: 17px;
+}
+
+.totalCartBtn {
+    margin-left: 30px;
+    width: 70px;
+    height: 40px;
+    background-color: #216569;
+    outline: none;
+    border: 1px solid #216569;
+    display: flex;
+    align-items: center;
+    color: #F0FFFF;
+    font-family: 'Rubik';
+    letter-spacing: .9px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.totalCartBtn > p {
+    position: relative;
+    left: 12px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #79c3c7;
+    border-radius: 80px;
+    background-color: #79c3c7;
+    align-items: center;
+}
+
+.totalCartBtn:hover {
+    background-color: #2b8186;
+    transform: scale(.98);
+}
+
+.totalCartBtn:active {
+    transform: scale(1.05);
+}
+
+.productsWrapper {
+    width: fit-content;
+    margin-top: 50px;
+}
+
+.productsList {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-gap: 50px;
+    max-width: fit-content;
+}
